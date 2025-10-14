@@ -1,0 +1,67 @@
+.home-container {
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+  
+  background-attachment: fixed;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+  font-family: "Comic Sans MS", cursive;
+}
+
+.home-footer{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 1px, 1px 2px #000;
+    background-color: rgb(16, 16, 245);
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.home-logo{
+    height: 200px;
+    width: 300px;
+}
+
+.home-container h1 {
+    color: #ffca28;
+    text-shadow: 1px 1px 2px #000000;
+    
+}
+.home-container p {
+font-size: 1.2rem;
+margin-top: 10px
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.home-btn {
+    background-color: #ffeb3b;
+    color: #000000;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #7bb8f4;
+    transform: scale(1.05);
+}

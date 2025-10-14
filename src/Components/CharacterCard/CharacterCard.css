@@ -1,0 +1,89 @@
+.character-card {
+  background-color: #fff7e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(249, 242, 105, 0.9);
+  padding: 1rem;
+  width: 220px;
+  height: 380px; /* Altura para todas las tarjetas */
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/*Animación al pasar el mouse */
+.character-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  background-color: aquamarine;
+  box-shadow: 0 8px 16px rgb(251, 244, 106);
+  background-color: #fff3c4;
+  animation: jello 0.9s both; /* Aplica la animación en hover */
+}
+
+
+
+/* Imagen circular */
+.character-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fdd835;
+  margin-bottom: 10px;
+}
+
+/*  Títulos y textos */
+.character-card h3 {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.character-card p {
+  font-size: 0.85rem;
+  color: #000000;
+  margin: 2px 0;
+}
+
+/*  Frases */
+.phrases {
+  margin-top: 8px;
+  flex-grow: 1;
+  width: 100%;
+  overflow-y: auto; /* Scroll vertical en y */
+  scrollbar-width: thin;
+  scrollbar-color: #fdd835 #fff7e6;
+  padding-right: 6px;
+}
+
+.phrases ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phrases li {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+/* Estilo del scroll */
+.phrases::-webkit-scrollbar {
+  width: 6px;
+}
+
+.phrases::-webkit-scrollbar-thumb {
+  background-color: #fdd835;
+  border-radius: 6px;
+}
+
+.phrases::-webkit-scrollbar-track {
+  background-color: #fff7e6;
+}
