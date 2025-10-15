@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from './Components/Navbar/Navbar'
 import Home from "./Pages/Home/Home";
@@ -11,9 +11,9 @@ import './App.css'
 
 function App() {
   return (
-
-    <BrowserRouter>
+    <>
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/personajes" element={<Characters />} />
@@ -21,9 +21,8 @@ function App() {
         <Route path="/lugares" element={<Locations />} />
         <Route path="/episodios" element={<Episodes />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
-export default App
-
+export default App;
